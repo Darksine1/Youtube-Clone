@@ -1,0 +1,70 @@
+body {
+    margin:0;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0px;
+    padding: 0;
+  }
+
+  #userpic {
+     border-radius: 50%;
+     width: 45px;
+  }
+
+  .main {
+    padding: 16px;
+    margin: 2% 3%;
+    height: 1500px; /* Used in this example to enable scrolling */
+  }
+
+  .navbar div {
+    float: left;
+    display: fixed;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .flex-container {
+      display: flex;
+      flex-flow: row wrap;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-top: 15%;
+      padding-left: 10%;
+  }
+
+  form.example button {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    background: gray;
+    color: white;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  /* Style the search field */
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+
+  .container3 {
+      width: 500px;
+  }
+
+  .details {
+      padding-top: 20px;
+  }

@@ -4,15 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"/>
+
+
     <link rel="stylesheet" href="stylesheet.css" />
+
     <title>Youtube Clone</title>
 </head>
 <body>
-    <div class="container">
-        <nav>
-            
-        </nav>
+    <div class="navbar">
+        
+            <div class="container2">
+                <img src="Menu.jpg" alt="menu" style="width:40px;height:40px;padding-left:10px;color:gray;">
+                <a href="https://www.youtube.com/">
+                 <img src="Logo.png" alt="Logo" style="width:100px;height:60px;">
+                </a>
+            </div>
+            <div class="container3">
+                <form class="example" action="/action_page.php">
+                    <input type="text" placeholder="Search" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <i class="fa fa-microphone" style="font-size:29px;color:gray;"></i>
+            </div>
+            <div class="container4">
+                <i class="fa fa-bell" style="font-size:24px;color:gray;"></i>
+                <img src="yayo.jpg" alt="userpic" id="userpic">
+            </div>
+            </form>
     </div>
-    
+
+
+    <main class="flex-container">
+        <div class="media">
+            <div class="video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/oavMtUWDBTM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <article class="details">
+                <div class="title">
+                    <h3>
+                        Modern Art
+                    </h3>
+                    <p>
+                        30,254,345 views
+                    </p>
+                </div>
+                <div class="description">
+                   <p>
+                       One of the best videos of all time, great singer
+                       performing.
+                   </p> 
+                </div>
+            </article>
+        </div>
+    </main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>
