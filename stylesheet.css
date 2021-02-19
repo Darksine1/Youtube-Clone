@@ -1,0 +1,27 @@
+.thumbnail__list {
+    width: 30%;
+    font-family: 'Roboto', 'sans-serif';
+} 
+.thumbnail {
+    display: flex;
+    padding-bottom: 8px;
+}
+.thumbnail__image {
+    width: auto;
+    height: auto;
+    max-width: 168px;
+    max-height: 98px;
+    margin-right: 8px;
+}
+.thumbnail--info__title {
+    margin: 0 0 4px 0;
+    font-size: 14px;
+    letter-spacing: normal;
+}
+.thumbnail--info--meta {
+    color: #606060;
+    font-size: 13px;
+}
+.thumbnail--info--inline {
+    margin-top: 4px;
+}
