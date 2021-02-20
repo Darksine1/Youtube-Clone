@@ -4,103 +4,162 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css" />
     <title>Youtube Clone</title>
 </head>
 <body>
-    <section class="thumbnail__list">
-        <div class="thumbnail">
-            <img class="thumbnail__image" src="assets/images/thumbnails/th1.jpg" />
-            <div class="thumbnail--info">
-                <h3 class="thumbnail--info__title">En tren a través de la historia de Japón | DW Documental</h3>
-                <div class="thumbnail--info--meta">
-                    <span class="thumbnail--info__channel">DW Documental</span>
-                    <div class="thumbnail--info--inline">
-                        <span class="thumbnail--info__views">2.1M views</span>
-                        <span>&bull;</span>
-                        <span class="thumbnail--info__date">4 weeks ago</span>    
-                    </div>
-                </div>
+    <nav class="navbar fixed-top navbar-light bg-white">
+        <div class="container-fluid">
+            <a class="menu">
+                <i class="fa fa-bars" style="font-size:25px;"></i>
+            </a>
+                <a href="https://www.youtube.com/">
+                    <img src="Logo.png" alt="Logo" style="width:100px;height:50px;">
+                </a>
+            
+                <a>
+                    <form class="example">
+                        <input type="text" placeholder="Search" name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </a>
+           
+                <a class="icon">
+                    <i class="fa fa-microphone" style="font-size:29px;color:gray;;"></i>
+                </a>
+           
+                <a class="icon">
+                    <i class="fa fa-bell" style="font-size:24px;color:gray;"></i>
+                </a>
+            
+                <a class="icon">
+                    <img src="yayo.jpg" alt="userpic" id="userpic">
+                </a>
+        </div>    
+    </nav>
+
+
+    <main class="flex-container">
+        <div class="media">
+            <div class="video">
+              <iframe width="860" height="515" src="https://www.youtube.com/embed/oavMtUWDBTM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+            <article class="details">
+                <div class="title">
+                    <h3>
+                        Modern Art
+                    </h3>
+                    <p>
+                        30,254,345 views
+                    </p>
+                </div>
+                <div class="description">
+                   <p>
+                       One of the best videos of all time, great singer
+                       performing.
+                   </p> 
+                </div>
+            </article>
         </div>
 
-        <div class="thumbnail">
-            <img class="thumbnail__image" src="assets/images/thumbnails/th3.jpg" />
-            <div class="thumbnail--info">
-                <h3 class="thumbnail--info__title">Agujeros de gusano o cómo romper el espaciotiempo</h3>
-                <div class="thumbnail--info--meta">
-                    <span class="thumbnail--info__channel">En Pocas Palabras – Kurzgesagt</span>
-                    <div class="thumbnail--info--inline">
-                        <span class="thumbnail--info__views">358K views</span>
-                        <span>&bull;</span>
-                        <span class="thumbnail--info__date">5 months ago</span>    
+        <section class="thumbnail__list">
+            <div class="thumbnail">
+                <img class="thumbnail__image" src="assets/images/thumbnails/th1.jpg" />
+                <div class="thumbnail--info">
+                    <h3 class="thumbnail--info__title">En tren a través de la historia de Japón | DW Documental</h3>
+                    <div class="thumbnail--info--meta">
+                        <span class="thumbnail--info__channel">DW Documental</span>
+                        <div class="thumbnail--info--inline">
+                            <span class="thumbnail--info__views">2.1M views</span>
+                            <span>&bull;</span>
+                            <span class="thumbnail--info__date">4 weeks ago</span>    
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="thumbnail">
-            <img class="thumbnail__image" src="assets/images/thumbnails/th2.jpg" />
-            <div class="thumbnail--info">
-                <h3 class="thumbnail--info__title">Cómo dormir bien por la noche | DW Documental</h3>
-                <div class="thumbnail--info--meta">
-                    <span class="thumbnail--info__channel">DW Documental</span>
-                    <div class="thumbnail--info--inline">
-                        <span class="thumbnail--info__views">738K views</span>
-                        <span>&bull;</span>
-                        <span class="thumbnail--info__date">1 week ago</span>    
+            <div class="thumbnail">
+                <img class="thumbnail__image" src="assets/images/thumbnails/th3.jpg" />
+                <div class="thumbnail--info">
+                    <h3 class="thumbnail--info__title">Agujeros de gusano o cómo romper el espaciotiempo</h3>
+                    <div class="thumbnail--info--meta">
+                        <span class="thumbnail--info__channel">En Pocas Palabras – Kurzgesagt</span>
+                        <div class="thumbnail--info--inline">
+                            <span class="thumbnail--info__views">358K views</span>
+                            <span>&bull;</span>
+                            <span class="thumbnail--info__date">5 months ago</span>    
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="thumbnail">
-            <img class="thumbnail__image" src="assets/images/thumbnails/th1.jpg" />
-            <div class="thumbnail--info">
-                <h3 class="thumbnail--info__title">En tren a través de la historia de Japón | DW Documental</h3>
-                <div class="thumbnail--info--meta">
-                    <span class="thumbnail--info__channel">DW Documental</span>
-                    <div class="thumbnail--info--inline">
-                        <span class="thumbnail--info__views">2.1M views</span>
-                        <span>&bull;</span>
-                        <span class="thumbnail--info__date">4 weeks ago</span>    
+            <div class="thumbnail">
+                <img class="thumbnail__image" src="assets/images/thumbnails/th2.jpg" />
+                <div class="thumbnail--info">
+                    <h3 class="thumbnail--info__title">Cómo dormir bien por la noche | DW Documental</h3>
+                    <div class="thumbnail--info--meta">
+                        <span class="thumbnail--info__channel">DW Documental</span>
+                        <div class="thumbnail--info--inline">
+                            <span class="thumbnail--info__views">738K views</span>
+                            <span>&bull;</span>
+                            <span class="thumbnail--info__date">1 week ago</span>    
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="thumbnail">
-            <img class="thumbnail__image" src="assets/images/thumbnails/th3.jpg" />
-            <div class="thumbnail--info">
-                <h3 class="thumbnail--info__title">Agujeros de gusano o cómo romper el espaciotiempo</h3>
-                <div class="thumbnail--info--meta">
-                    <span class="thumbnail--info__channel">En Pocas Palabras – Kurzgesagt</span>
-                    <div class="thumbnail--info--inline">
-                        <span class="thumbnail--info__views">358K views</span>
-                        <span>&bull;</span>
-                        <span class="thumbnail--info__date">5 months ago</span>    
+            <div class="thumbnail">
+                <img class="thumbnail__image" src="assets/images/thumbnails/th1.jpg" />
+                <div class="thumbnail--info">
+                    <h3 class="thumbnail--info__title">En tren a través de la historia de Japón | DW Documental</h3>
+                    <div class="thumbnail--info--meta">
+                        <span class="thumbnail--info__channel">DW Documental</span>
+                        <div class="thumbnail--info--inline">
+                            <span class="thumbnail--info__views">2.1M views</span>
+                            <span>&bull;</span>
+                            <span class="thumbnail--info__date">4 weeks ago</span>    
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="thumbnail">
-            <img class="thumbnail__image" src="assets/images/thumbnails/th2.jpg" />
-            <div class="thumbnail--info">
-                <h3 class="thumbnail--info__title">Cómo dormir bien por la noche | DW Documental</h3>
-                <div class="thumbnail--info--meta">
-                    <span class="thumbnail--info__channel">DW Documental</span>
-                    <div class="thumbnail--info--inline">
-                        <span class="thumbnail--info__views">738K views</span>
-                        <span>&bull;</span>
-                        <span class="thumbnail--info__date">1 week ago</span>    
+            <div class="thumbnail">
+                <img class="thumbnail__image" src="assets/images/thumbnails/th3.jpg" />
+                <div class="thumbnail--info">
+                    <h3 class="thumbnail--info__title">Agujeros de gusano o cómo romper el espaciotiempo</h3>
+                    <div class="thumbnail--info--meta">
+                        <span class="thumbnail--info__channel">En Pocas Palabras – Kurzgesagt</span>
+                        <div class="thumbnail--info--inline">
+                            <span class="thumbnail--info__views">358K views</span>
+                            <span>&bull;</span>
+                            <span class="thumbnail--info__date">5 months ago</span>    
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+
+            <div class="thumbnail">
+                <img class="thumbnail__image" src="assets/images/thumbnails/th2.jpg" />
+                <div class="thumbnail--info">
+                    <h3 class="thumbnail--info__title">Cómo dormir bien por la noche | DW Documental</h3>
+                    <div class="thumbnail--info--meta">
+                        <span class="thumbnail--info__channel">DW Documental</span>
+                        <div class="thumbnail--info--inline">
+                            <span class="thumbnail--info__views">738K views</span>
+                            <span>&bull;</span>
+                            <span class="thumbnail--info__date">1 week ago</span>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
 </body>
 </html>

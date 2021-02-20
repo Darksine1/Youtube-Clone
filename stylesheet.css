@@ -1,6 +1,78 @@
+
+
+body {
+    margin:0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    
+    margin: 0;
+    padding: 16px;
+    overflow: hidden;
+    display: flex;
+    list-style: none;
+}
+
+
+a {
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+#userpic {
+     border-radius: 50%;
+     width: 40px;
+     height: 40px;
+}
+
+.flex-container {
+      display: flex;
+      flex-flow: row wrap;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-top: 5%;
+      padding-left: 5%;
+      margin: 2% 3%;
+}
+
+
+form.example button {
+    padding: 1px 20px;
+    background: gray;
+    color: white;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: left;
+    font-size: 17px;
+    float: right;
+}
+  /* Style the search field */
+form.example input[type=text] {
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 40rem;
+    background: #f1f1f1;
+    padding: 1px 2px;
+
+}
+
+.media {
+      padding-left: -5px;
+}
+
 .thumbnail__list {
     width: 30%;
     font-family: 'Roboto', 'sans-serif';
+    display: flex;
+    flex-flow: column wrap;
+    padding-left: 110px;
 } 
 .thumbnail {
     display: flex;
