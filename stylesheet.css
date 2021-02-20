@@ -1,76 +1,78 @@
+
+
 body {
     margin:0;
+    background-color: #f2f2f2;
 }
 
-.navbar {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    margin: 0px;
-    padding: 0;
-  }
-
-  #userpic {
-     border-radius: 50%;
-     width: 45px;
-  }
-
-  .main {
+.container {
+    
+    margin: 0;
     padding: 16px;
-    margin: 2% 3%;
-    height: 1500px; /* Used in this example to enable scrolling */
-  }
+    overflow: hidden;
+    display: flex;
+    list-style: none;
+}
 
-  .navbar div {
-    float: left;
-    display: fixed;
-    color: #f2f2f2;
+
+a {
+    display: block;
+    color: grey;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
-  }
+}
 
-  .flex-container {
+
+
+#userpic {
+     border-radius: 50%;
+     width: 40px;
+     height: 40px;
+}
+
+.flex-container {
       display: flex;
       flex-flow: row wrap;
       flex-direction: row;
       flex-wrap: wrap;
-      padding-top: 15%;
-      padding-left: 10%;
-  }
+      padding-top: 5%;
+      padding-left: 5%;
+      margin: 2% 3%;
+}
 
-  form.example button {
-    float: left;
-    width: 15%;
-    padding: 10px;
+
+form.example button {
+    padding: 1px 20px;
     background: gray;
     color: white;
     border: 1px solid grey;
     border-left: none;
-    cursor: pointer;
-  }
+    cursor: left;
+    font-size: 17px;
+    float: right;
+}
   /* Style the search field */
 form.example input[type=text] {
-    padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
     float: left;
-    width: 80%;
+    width: 40rem;
     background: #f1f1f1;
-  }
+    padding: 1px 2px;
 
-  .container3 {
-      width: 500px;
-  }
+}
 
-  .details {
-      padding-top: 20px;
-  }
+.media {
+      padding-left: -5px;
+}
+
 .thumbnail__list {
     width: 30%;
     font-family: 'Roboto', 'sans-serif';
+    display: flex;
+    flex-flow: column wrap;
+    padding-left: 110px;
 } 
 .thumbnail {
     display: flex;
